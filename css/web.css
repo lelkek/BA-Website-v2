@@ -107,6 +107,21 @@ ul.navbar li a {
 color: grey;
 }
 
+h1 {
+ font-family: 'Montserrat', sans-serif;
+
+}
+.textwrapper {
+  margin: 25px 28%;
+}
+
+#maintext {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  text-indent: 30px;
+  letter-spacing: 0.5px;
+}
+
 #opt1 {
   padding-left: 3px;
 }
