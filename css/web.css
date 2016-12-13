@@ -25,12 +25,29 @@ button {
   border-radius: 50%;
 }
 
-@media screen and all (min-width: ) {
+@media only screen and (max-width: 1160px) {
+  #lefttext {display: none;}
+  #righttext {display: none;}
+  #maintext {width: 100% !important; border: none;}
+  ul.navbar {display:none;}
+  .container {justify-content: space-between;}
+  .navbutton {display: flex !important;}
+  .slider {height: 40vh;}
+  .slick-slide img {height: 40vh;}
+}
 
+.navbutton {
+  display: none;
+  width: 120px;
+  text-align: center;
+  list-style-type: none;
 }
 
 .container {
   display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
   height: 60px;
   position: relative;
   z-index: 10;
@@ -46,6 +63,7 @@ ul.navbar {
   overflow: hidden;
   background-color: white;
   font-family: 'Roboto', sans-serif;
+
 }
 
 ul.navbar li {
@@ -62,7 +80,6 @@ ul.navbar li a {
   position: relative;
   width: 120px;
   text-align: center;
-  padding: 21px 0px;
 }
 
 .divided:after {
@@ -134,19 +151,21 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   text-align: right;
   order: -1;
-  margin-right: 2vw;
   line-height: 1.5;
   width: 200px;
   min-width: 150px;
+  border-right: 1px solid silver;
+  padding-right: 2vw;
 }
 
 #lefttext {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
   order: 1;
-  margin-left: 2vw;
   line-height: 1.5;
   width: 200px;
+  border-left: 1px solid silver;
+  padding-left: 2vw;
 }
 
 #maintext {
@@ -155,8 +174,7 @@ h1 {
   text-indent: 20px;
   letter-spacing: 0.5px;
   padding: 0px 3vw;
-  border: solid silver;
-  border-width: 0px 1px;
+  min-width: 630px;
   width: 40%;
   order: 0;
 }
